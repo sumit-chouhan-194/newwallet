@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+    list-style-type: none !important;
+    box-sizing: border-box !important;
+}
+
+/* root */
+
+:root {
+    --fs-xs: 16px;
+    --fs-sm: 18px;
+    --fs-md: 24px;
+    --fs-lg: 36px;
+    --fs-xl: 48px;
+    --color-gray: #bcbcbc;
+}
+
+.color_gray {
+    color: #9f9f9f !important;
+}
+
+.color_black {
+    color: black;
+}
+
+
+.fs_xs {
+    font-size: var(--fs-xs);
+}
+
+.fs_sm {
+    font-size: var(--fs-sm);
+}
+
+.fs_md {
+    font-size: var(--fs-md);
+}
+
+.fs_lg {
+    font-size: var(--fs-lg);
+}
+
+.fs_xl {
+    font-size: var(--fs-xl);
+}
+
+.ff_poppins {
+    font-family: 'poppins', 'sans serif';
+}
+
+.curser_pointer {
+    cursor: pointer;
+}
+
+.page_bg {
+    background-color: #f8f8f8;
+}
+
+/* nav .nav_bar{z-index: 5;} */
+.hero_bg {
+    background-image: url(../images/hero-bg.png);
+    background-repeat: no-repeat;
+    min-height: 412px;
+    background-size: auto;
+    background-position: center;
+
+}
+
+
+.card_shado {
+    box-shadow: 0px 15px 20px rgba(3, 3, 3, 0.19);
+}
+
+.z_index_-1 {
+    z-index: -1;
+}
+
+
+
+
+
+/* navtoggle */
+
+
+
+input[type="checkbox"] {
+    position: relative;
+    width: 50px;
+    height: 26px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: gray;
+    outline: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: inset 0 0 5px rgb(0 0 0 / 50%);
+  }
+  
+  input[type="checkbox"]::before {
+    content: "";
+    width: 22px;
+    margin-top: 2px;
+    margin-left: 3px;
+    
+    height: 22px;
+    border-radius: 50%;
+    background:black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: translateX(100%);
+    background:black;
+    margin-right: 10px;
+  }
+  
+  input[type="checkbox"]:checked {
+    background:gray;
+  }
+  
+
+
+
+.logo_img {
+    width: 32px !important;
+}
+
+.nav_img {
+    width: 32px !important;
+}
+
+.nav_input {
+    width: 315px;
+    height: 43px;
+    left: 1158px;
+    outline: unset;
+    top: 26px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 25.5px;
+    padding-left: 12px;
+}
+
+.nav_bar {
+    position: fixed;
+    background: white;
+    flex-direction: column;
+
+    left: -100%;
+    top: 0;
+    height: 100vh;
+    gap: 20px;
+    transition: all 600ms linear;
+    width: 100%;
+    justify-content: center;
+
+
+
+}
+
+.box {
+    height: 348px;
+    width: 312px;
+    margin: 12px;
+}
+
+#mobileview:checked~.nav_bar {
+    left: 0;
+}
+
+.hero_card {
+    transform: translateY(-30%);
+    border-radius: 10px;
+}
+
+.card_button {
+    right: 5%;
+    top: 5%;
+}
+
+.border_none {
+    border: none;
+}
+
+.object_fit_c {
+    object-fit: cover;
+}
+
+.h_348 {
+    height: 348px;
+}
+
+.bottom_14 {
+    bottom: 14px;
+}
+
+.card_section {
+    transform: translatey(-3%);
+}
+
+
+.w_400 {
+    max-width: 400px;
+    width: 100%;
+}
+
+.bg_light_gray {
+    background: #FAFAFA;
+}
+.cross_icon{left:95% !important;
+top: -43px;
+cursor: pointer;
+}
+.modal {
+    margin-top: 3% !important;
+}
+.border_3side{border-radius: 0px 10px 10px 10px;}
+.card_effect:hover{transform: translateY(-10px);
+transition: all 300ms linear;}
+
+
+@media (max-width:576px) {
+    .card_button {
+        right: 10px;
+        top: 10px;
+        display: flex;
+    }
+
+}
+
+@media (min-width:576px) {
+
+
+
+    :root {
+        --fs-xs: 16px;
+        --fs-sm: 18px;
+        --fs-md: 24px;
+        --fs-lg: 30px;
+
+    }
+
+    .logo_img {
+        width: 40px !important;
+    }
+
+    .nav_img {
+        width: 45px !important;
+    }
+
+    .card_section {
+        transform: translatey(-5%);
+    }
+
+
+}
+
+
+@media (min-width:768px) {
+    :root {
+        --fs-xs: 16px;
+        --fs-sm: 18px;
+        --fs-md: 30px;
+        --fs-lg: 32px;
+
+
+    }
+
+
+    .logo_img {
+        width: 50px !important;
+    }
+
+    .nav_img {
+        width: 50px !important;
+    }
+
+    .card_section {
+        transform: translatey(-7%);
+    }
+    
+
+input[type="checkbox"] {
+    position: relative;
+    width: 65px;
+    height: 34px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: gray;
+    outline: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: inset 0 0 5px rgb(0 0 0 / 50%);
+  }
+  
+  input[type="checkbox"]::before {
+    content: "";
+    width: 30px;
+    margin-top: 2px;
+    margin-left: 3px;
+    height: 30px;
+    border-radius: 50%;
+    background:black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  }
+  
+
+}
+
+@media (min-width:992px) {
+    .nav_bar {
+        position: unset;
+        height: 0;
+        transition: 0;
+
+    }
+
+    :root {
+        --fs-xs: 16px;
+        --fs-sm: 18px;
+        --fs-md: 32px;
+        --fs-lg: 36px;
+
+    }
+
+    .logo_img {
+        width: 64px !important;
+    }
+
+    .nav_img {
+        width: 57px !important;
+    }
+
+    .hero_card {
+        transform: translatey(-40%);
+        border-radius: 30px;
+    }
+
+    .border_r {
+        border-right: 1px solid #00000043;
+        height: 70px;
+    }
+
+    .card_section {
+        transform: translatey(-7%);
+    }
+
+
+}
